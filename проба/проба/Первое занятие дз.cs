@@ -32,3 +32,4 @@ Console.WriteLine($"Ваше имя {name}");
 Console.WriteLine($"Ваше имя {name}");
 Console.WriteLine($"Ваше имя {name}");
 Console.WriteLine($"Ваше имя {name}");
+Console.WriteLine($"Ваше имя {name}");
