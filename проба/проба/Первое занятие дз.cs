@@ -31,3 +31,15 @@ Console.WriteLine($"Ваше имя {name}");
 Console.WriteLine($"Ваше имя {name}");
 
 sdfsdfsdf
+//Console.WriteLine("Введите ваше имя");
+//string name = Console.ReadLine();
+//Console.WriteLine($"Ваше имя {name}");
+//Console.WriteLine($"Ваше имя {name}");
+//Console.WriteLine($"Ваше имя {name}");
+//Console.WriteLine($"Ваше имя {name}");
+//Console.WriteLine($"Ваше имя {name}");
+//Console.WriteLine($"Ваше имя {name}");
+
+double a = 3,141592653
+double b = 2,7182818284590452
+Console.WriteLine($"{a}{b}");
