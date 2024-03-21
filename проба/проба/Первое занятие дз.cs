@@ -42,6 +42,15 @@
 ////Console.WriteLine($"Ваше имя {name}");
 ////Console.WriteLine($"Ваше имя {name}");
 
+// Домашняя работа
+Console.WriteLine("Введите ваше имя");
+string name = Console.ReadLine();
+Console.WriteLine($"Ваше имя {name}");
+Console.WriteLine($"Ваше имя {name}");
+Console.WriteLine($"Ваше имя {name}");
+Console.WriteLine($"Ваше имя {name}");
+Console.WriteLine($"Ваше имя {name}");
+Console.WriteLine($"Ваше имя {name}");
 double a = 3.141592653;
 decimal b = 2.7182818284590452m;
 Console.WriteLine(a);
