@@ -400,3 +400,70 @@
 
 //}
 //Console.WriteLine(summ);
+
+
+
+//Урок 5
+//сложение строчек
+
+//string s1 = "123";
+//string s2="!!!";
+//string s= s1 + s2 +"qwe"+"rty";
+
+//Console.WriteLine(s);
+
+
+//Сравнение
+//string s1 = "123";
+//string s2 = "!!!";
+
+//bool b2 = s1 == s2;
+////или
+//int result = string.Compare(s1, s2);
+
+//Console.WriteLine(result);
+
+
+//Задача 1
+//string name = "Влад";
+//string surname = "Богданов";
+////string fullName = name + " " + surname;
+////или
+////string fullName2 = string.Concat(name," ",surname);
+////или
+////Console.WriteLine($"{name} {surname}");
+////или
+//Console.WriteLine(string.Format(surname, name));
+
+
+//Задача 2
+//string firstName = "Влад";
+//string lastName = "Богданов";
+//string fullname = "";
+//if (firstName.Length > 3)
+//{
+//    fullname = firstName.Remove(3);
+//    fullname= string.Concat(fullname,"***");
+//}
+//else
+//{
+//    fullname = string.Concat(firstName, "***");
+//}
+//Console.WriteLine(fullname);
+
+
+//Задача 3
+//string firstName = "Влад";
+//string lastName = "Богданов";
+
+//Console.WriteLine($"{firstName[0]}. {lastName[0]}.");
+
+//Задача 4
+string line = "";
+
+while (true)
+{
+    Console.WriteLine("Введите слово");
+    line+=Console.ReadLine();
+    Console.WriteLine(line);
+}
