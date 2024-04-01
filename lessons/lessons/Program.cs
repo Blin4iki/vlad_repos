@@ -459,11 +459,11 @@
 //Console.WriteLine($"{firstName[0]}. {lastName[0]}.");
 
 //Задача 4
-string line = "";
+//string line = "";
 
-while (true)
-{
-    Console.WriteLine("Введите слово");
-    line+=Console.ReadLine();
-    Console.WriteLine(line);
-}
+//while (true)
+//{
+//    Console.WriteLine("Введите слово");
+//    line+=Console.ReadLine();
+//    Console.WriteLine(line);
+//}
