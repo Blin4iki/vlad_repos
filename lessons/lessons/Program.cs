@@ -1,36 +1,153 @@
-﻿////Создайте три строковые переменные и присвойте им значения: 
-////    "\nмоя строка 1”; " +
-////    ""\tмоя строка 2”; 
-////"\aмоя строка 3".
-////    Выведите значение каждой переменной на экран. Какие отличия вы увидели? Сделайте выводы.
+﻿// ДЗ №3
+//Задание 1
+//int[] numbers = { 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 };
 
-////Console.Write("\nмоя строка 1");
-////Console.Write("\tмоя строка 2");
-////Console.Write("\aмоя строка 3");
+//Console.Write("Введите число для поиска: ");
+//int numberToSearch = int.Parse(Console.ReadLine());
+
+//bool isFound = false;
+//foreach (int number in numbers)
+//{
+//    if (number == numberToSearch)
+//    {
+//        isFound = true;
+//        break;
+//    }
+//}
+
+//if (isFound)
+//{
+//    Console.WriteLine("Число найдено в массиве.");
+//}
+//else
+//{
+//    Console.WriteLine("Число не найдено в массиве.");
+//}
 
 
-////Используя Visual Studio, создайте проект по шаблону Console Application. 
-////    Создайте константу с именем -pi (число π «пи»), 
-////    создайте переменную радиус с именем – r. 
-////    Используя формулу πR2, вычислите площадь круга и выведите результат на экран.
+//Задание 2
+// единственное, я здесь почему то не смог перенести на след строку сообщение о том какое число удалить
+//int[] numbers = { 2, 5, 8, 5, 7, 9, 12, 5, 15, 18 };
+//Console.Write("Наш массив: ");
+//foreach (int number in numbers)
+//{
+//    Console.Write(number + " ");
+//}
+////Console.WriteLine("[{0}]", string.Join(", ", numbers)); // или можно так
+//Console.WriteLine("Введите число для удаления: ");
+//int numberToDelete = int.Parse(Console.ReadLine());
 
-//Console.WriteLine("Введите Радиус");
-//double radius = double.Parse(Console.ReadLine());
-//double square = Math.PI* (Math.Pow(radius,2)); 
-//Console.WriteLine(square);
-////switch (a)
-////{
-////    case 1:
-////        Console.WriteLine(1);
-////        break;
-////    case 2:
-////    case 3:
-////        Console.WriteLine(2);
-////        break;
-////    case 4:
-////        Console.WriteLine(4);
-////        break;
-////    default:
-////        Console.WriteLine("Дадад");
-////        break;
-////}
+//int count = 0;
+//foreach (int number in numbers)
+//{
+//    if (number == numberToDelete)
+//    {
+//        count++;
+//    }
+//}
+
+//if (count == 0)
+//{
+//    Console.WriteLine("Число не найдено в массиве.");
+//}
+//else
+//{
+//    int[] result = new int[numbers.Length - count];
+//    int index = 0;
+//    foreach (int number in numbers)
+//    {
+//        if (number != numberToDelete)
+//        {
+//            result[index] = number;
+//            index++;
+//        }
+//    }
+
+//    Console.WriteLine("Новый массив после удаления числа:");
+//    foreach (int number in result)
+//    {
+//        Console.Write(number + " ");
+//    }
+//}
+
+
+//Задание 3
+//Снова проблема с переносом строки, ситуация такая же как и в прошлом задании
+//Console.Write("Введите размер массива: ");
+//int size = int.Parse(Console.ReadLine());
+
+//int[] array = new int[size];
+//var random = new Random();
+
+//int max = 0;
+//int min = 1000;
+//double sum = 0;
+
+//for (int i = 0; i < size; i++)
+//{
+//    array[i] = random.Next(1, 1000);
+//}
+
+//foreach (int num in array)
+//{
+//    if (num > max)
+//        max = num;
+
+//    if (num < min)
+//        min = num;
+
+//    sum += num;
+//}
+
+//double average = sum / size;
+
+//Console.WriteLine("Массив случайных чисел:");
+//foreach (int num in array)
+//{
+//    Console.Write(num + " ");
+//}
+//Console.WriteLine("\nМаксимальное значение в массиве: " + max);
+//Console.WriteLine("Минимальное значение в массиве: " + min);
+//Console.WriteLine("Среднее значение в массиве: " + average);
+
+
+//Задание 4
+//int[] array1 = { 1, 2, 3, 4, 5 };
+//int[] array2 = { 10, 20, 30, 40, 50 };
+//Console.WriteLine("Массив №1");
+//foreach (int number in array1)
+//{
+//    Console.Write(number + " ");
+//}
+//Console.WriteLine("\nМассив №2");
+//foreach (int number in array2)
+//{
+//    Console.Write(number + " ");
+//}
+//double sum1 = 0;
+//double sum2 = 0;
+//foreach (int num in array1)
+//{
+//    sum1 += num;
+//}
+//foreach (int num in array2)
+//{
+//    sum2 += num;
+//}
+//int size1 = array1.Length;
+//int size2 = array2.Length;
+//double average1 = sum1 / size1;
+//double average2 = sum2 / size2;
+
+//if (average1 > average2)
+//{
+//    Console.WriteLine("\nв массиве 1 среднее арифетическое больше чем в массиве 2");
+//}
+//else if (average1 < average2)
+//{
+//    Console.WriteLine("\nв массиве 2 среднее арифетическое больше чем в массиве 1");
+//}
+//else
+//{
+//    Console.WriteLine("\nсреднее арифметическое массива 1 равно среднему арифметическому массива 2");
+//}
