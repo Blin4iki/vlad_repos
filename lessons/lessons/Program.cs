@@ -33,6 +33,7 @@
 //{
 //    Console.Write(number + " ");
 //}
+////Console.WriteLine("[{0}]", string.Join(", ", numbers)); // или можно так
 //Console.WriteLine("Введите число для удаления: ");
 //int numberToDelete = int.Parse(Console.ReadLine());
 
@@ -76,16 +77,16 @@
 //int size = int.Parse(Console.ReadLine());
 
 //int[] array = new int[size];
-//Random random = new Random();
+//var random = new Random();
+
+//int max = 0;
+//int min = 1000;
+//double sum = 0;
 
 //for (int i = 0; i < size; i++)
 //{
-//    array[i] = random.Next(1, 1000); 
+//    array[i] = random.Next(1, 1000);
 //}
-
-//int max = array[0];
-//int min = array[0];
-//double sum = 0;
 
 //foreach (int num in array)
 //{
@@ -105,25 +106,24 @@
 //{
 //    Console.Write(num + " ");
 //}
-
-//Console.WriteLine("Максимальное значение в массиве: " + max);
+//Console.WriteLine("\nМаксимальное значение в массиве: " + max);
 //Console.WriteLine("Минимальное значение в массиве: " + min);
 //Console.WriteLine("Среднее значение в массиве: " + average);
 
 
 //Задание 4
-//int[] array1 = { 100, 200, 300, 400, 500 };
+//int[] array1 = { 1, 2, 3, 4, 5 };
 //int[] array2 = { 10, 20, 30, 40, 50 };
+//Console.WriteLine("Массив №1");
 //foreach (int number in array1)
 //{
 //    Console.Write(number + " ");
 //}
-//Console.WriteLine(); // Знаю не красиво, но как лучше сделать,не придумал))
+//Console.WriteLine("\nМассив №2");
 //foreach (int number in array2)
 //{
 //    Console.Write(number + " ");
 //}
-//Console.WriteLine(); //чтобы след. строка перенеслась
 //double sum1 = 0;
 //double sum2 = 0;
 //foreach (int num in array1)
@@ -141,13 +141,13 @@
 
 //if (average1 > average2)
 //{
-//    Console.WriteLine("В массиве 1 среднее арифетическое больше чем в массиве 2");
+//    Console.WriteLine("\nв массиве 1 среднее арифетическое больше чем в массиве 2");
 //}
 //else if (average1 < average2)
 //{
-//    Console.WriteLine("В массиве 2 среднее арифетическое больше чем в массиве 1");
+//    Console.WriteLine("\nв массиве 2 среднее арифетическое больше чем в массиве 1");
 //}
 //else
 //{
-//    Console.WriteLine("Среднее арифметическое массива 1 равно среднему арифметическому массива 2");
+//    Console.WriteLine("\nсреднее арифметическое массива 1 равно среднему арифметическому массива 2");
 //}
