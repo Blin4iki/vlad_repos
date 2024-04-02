@@ -151,3 +151,98 @@
 //{
 //    Console.WriteLine("\nсреднее арифметическое массива 1 равно среднему арифметическому массива 2");
 //}
+
+
+//занятие 6 методы и классы
+
+//Console.WriteLine("Hello, World!");
+
+//PrintArray(new int[] { 1, 2, 3 });
+
+
+//int first = 2;
+//int second = 3;
+
+//int result = Multiply(first, second);
+//Console.WriteLine(result);
+//// создан метод умножения
+//int Multiply(int a, int b)
+//{
+//    int c = a * b;
+
+//    return c;
+//}
+//// создан метод вывода матрицы
+//void PrintArray(int[] array)
+//{
+//    Console.WriteLine(string.Join(", ", array));
+//}
+
+
+//var person = new Person()
+//{
+//    Name = "Вася",
+//    Age = 3453,
+//};
+
+//var person2 = new Person()
+//{
+//    Name = "Вася123123",
+//    Age = 345321321,
+//};
+
+//var info = person.GetInfo();
+//person2.GetInfo();
+
+//Console.WriteLine(info);
+
+
+//class Person
+//{
+//    public string Name { get; set; }
+//    public int Age { get; set; }
+
+//    public string GetInfo()
+//    {
+//        return $"{Name} , {Age}";
+//    }
+//}
+
+
+//var person = new Person("123", 123);
+
+//class Person
+//{
+//    public string Name { get; set; }
+//    public int Age { get; set; }
+
+//    public Person(string name)
+//    {
+//        Name = name;
+//    }
+
+//    public Person(string name, int age) : this(name)
+//    {
+//        Age = age;
+////    }
+//public static void Print(string message)
+//{
+//    Console.WriteLine(message);
+//}
+//}
+
+using lessons;
+
+Student[] students = new Student[14];
+for (int i = 0; i < students.Length; i++)
+{
+    students[i] = new Student(i.ToString(), Random.Shared.Next(0, 11));
+}
+
+foreach (Student student in students)
+{
+    //if (student.Score > 8)
+    {
+        student.Print();
+    }
+}
