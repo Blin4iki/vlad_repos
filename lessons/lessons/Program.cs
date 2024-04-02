@@ -241,7 +241,7 @@ for (int i = 0; i < students.Length; i++)
 
 foreach (Student student in students)
 {
-    //if (student.Score > 8)
+    if (student.Score > 8)
     {
         student.Print();
     }
