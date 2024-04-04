@@ -231,18 +231,151 @@
 //}
 //}
 
-using lessons;
+//using lessons;
 
-Student[] students = new Student[14];
-for (int i = 0; i < students.Length; i++)
+//Student[] students = new Student[14];
+//for (int i = 0; i < students.Length; i++)
+//{
+//    students[i] = new Student(i.ToString(), Random.Shared.Next(0, 11));
+//}
+
+//foreach (Student student in students)
+//{
+//    if (student.Score > 8)
+//    {
+//        student.Print();
+//    }
+//}
+
+// Занятие 7
+//var car = new Car();
+//var plane = new Plane();
+//var ship = new Ship();
+
+//MoveDog(car);
+//MoveDog(plane);
+//MoveDog(ship);
+
+
+//void MoveDog(Transport transport)
+//{
+//    transport.Move();
+//    transport.PrintSpeed();
+//}
+
+//void MoveDogUseCar(Car car)
+//{
+//    car.Move();
+//    car.PrintSpeed();
+//}
+
+//void MoveDogUseShip(Ship ship)
+//{
+//    ship.Move();
+//    ship.PrintSpeed();
+//}
+
+
+//class Transport
+//{
+//    public string Color { get; set; }
+
+//    protected int _speed;
+
+
+//    public void Move()
+//    {
+//        _speed++;
+//    }
+
+//    public void PrintSpeed()
+//    {
+//        Console.WriteLine(_speed.ToString());
+//    }
+//}
+
+//class Car : Transport
+//{
+//    public string TypeOfEngine { get; set; }
+
+//    public void PrintSpeedCar()
+//    {
+//        Console.WriteLine($"Car speed {_speed}");
+//    }
+//}
+
+//class Ship : Transport
+//{
+//    public int DeckHeight { get; set; }
+//}
+
+//class Plane : Transport
+//{
+//    public int DeckHeight { get; set; }
+//}
+
+
+
+//public class Person : IMovable, IJumping
+//{
+//    public string Name { get; set; }
+
+//    public void Jump()
+//    {
+//        Console.WriteLine("The Person's jumping");
+//    }
+
+//    public void Move()
+//    {
+//        Console.WriteLine("The Person's moving");
+//    }
+//}
+
+//public class Dog : IMovable, IJumping
+//{
+//    public string Name { get; set; }
+
+//    public void Jump()
+//    {
+//        Console.WriteLine("The dog's jumping");
+//    }
+
+//    public void Move()
+//    {
+//        Console.WriteLine("The dog's moving");
+//    }
+//}
+
+//public interface IMovable
+//{
+//    string Name { get; set; }
+//    void Move();
+//}
+
+//public interface IJumping
+//{
+//    void Jump();
+//}
+
+
+var operation = (Operation)Enum.Parse(typeof(Operation), Console.ReadLine());
+
+switch (operation)
 {
-    students[i] = new Student(i.ToString(), Random.Shared.Next(0, 11));
+    case Operation.Plus: Console.WriteLine("Plus"); break;
+    case Operation.Minus: Console.WriteLine("Minus"); break;
 }
 
-foreach (Student student in students)
+if (operation == Operation.Minus)
 {
-    if (student.Score > 8)
-    {
-        student.Print();
-    }
+
+}
+
+public enum Operation
+{
+    Plus,
+    Minus,
+    asdadsdas,
+    Minasdasdus,
+    asd,
 }
