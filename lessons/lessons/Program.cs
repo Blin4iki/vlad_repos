@@ -111,7 +111,7 @@
 //Console.WriteLine("Среднее значение в массиве: " + average);
 
 
-//Задание 4
+////Задание 4
 //int[] array1 = { 1, 2, 3, 4, 5 };
 //int[] array2 = { 10, 20, 30, 40, 50 };
 //Console.WriteLine("Массив №1");
@@ -134,10 +134,10 @@
 //{
 //    sum2 += num;
 //}
-//int size1 = array1.Length;
-//int size2 = array2.Length;
-//double average1 = sum1 / size1;
-//double average2 = sum2 / size2;
+
+//double average1 = sum1 / array1.Length;
+//double average2 = sum2 / array2.Length;
+
 
 //if (average1 > average2)
 //{
@@ -358,24 +358,99 @@
 //}
 
 
-var operation = (Operation)Enum.Parse(typeof(Operation), Console.ReadLine());
+//var operation = (Operation)Enum.Parse(typeof(Operation), Console.ReadLine());
 
-switch (operation)
+//switch (operation)
+//{
+//    case Operation.Plus: Console.WriteLine("Plus"); break;
+//    case Operation.Minus: Console.WriteLine("Minus"); break;
+//}
+
+//if (operation == Operation.Minus)
+//{
+
+//}
+
+//public enum Operation
+//{
+//    Plus,
+//    Minus,
+//    asdadsdas,
+//    Minasdasdus,
+//    asd,
+//}
+
+
+//Домашнее задание 5
+public class Phone
 {
-    case Operation.Plus: Console.WriteLine("Plus"); break;
-    case Operation.Minus: Console.WriteLine("Minus"); break;
-}
+    private string number;
+    private string model;
+    private double weight;
 
-if (operation == Operation.Minus)
-{
+    public Phone(string number, string model, double weight)
+    {
+        this.number = number;
+        this.model = model;
+        this.weight = weight;
+    }
 
-}
+    public Phone(string number, string model) : this(number, model, 0)
+    {
+    }
 
-public enum Operation
-{
-    Plus,
-    Minus,
-    asdadsdas,
-    Minasdasdus,
-    asd,
+    public Phone() : this("", "", 0)
+    {
+    }
+
+    public void receiveCall(string callerName)
+    {
+        Console.WriteLine("Звонит " + callerName);
+    }
+
+    public string getNumber()
+    {
+        return number;
+    }
+
+    public void receiveCall(string callerName, string callerNumber)
+    {
+        Console.WriteLine("Звонит " + callerName + " с номера " + callerNumber);
+    }
+
+    public void sendMessage(params string[] phoneNumbers)
+    {
+        Console.WriteLine("Отправка сообщения на следующие номера телефонов:");
+        foreach (string phoneNumber in phoneNumbers)
+        {
+            Console.WriteLine(phoneNumber);
+        }
+    }
+
+    public static void Main()
+    {
+        Phone phone1 = new Phone("12345678", "iPhone 15", 0.3);
+        Phone phone2 = new Phone("98765432", "Samsung Galaxy S23");
+        Phone phone3 = new Phone();
+
+        Console.WriteLine("Phone 1 details:");
+        Console.WriteLine("Number: " + phone1.getNumber());
+        Console.WriteLine("Model: " + phone1.model);
+        Console.WriteLine("Weight: " + phone1.weight + " kg");
+
+        Console.WriteLine("\nPhone 2 details:");
+        Console.WriteLine("Number: " + phone2.getNumber());
+        Console.WriteLine("Model: " + phone2.model);
+        Console.WriteLine("Weight: " + phone2.weight + " kg");
+
+        Console.WriteLine("\nPhone 3 details:");
+        Console.WriteLine("Number: " + phone3.getNumber());
+        Console.WriteLine("Model: " + phone3.model);
+        Console.WriteLine("Weight: " + phone3.weight + " kg");
+
+        phone1.receiveCall("Влад");
+        phone2.receiveCall("Оля", "99999999");
+
+        phone1.sendMessage("11111111", "22222222", "33333333");
+    }
 }
